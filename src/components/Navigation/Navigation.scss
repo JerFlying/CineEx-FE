@@ -1,0 +1,19 @@
+@import "../styles/variable";
+.navigation {
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  .items {
+    display: inline-flex;
+    width: 70%;
+  }
+  .post {
+    background-color: $red;
+    width: 30%;
+  }
+  .navigation-item {
+    color: #2d2d2d;
+  }
+}
