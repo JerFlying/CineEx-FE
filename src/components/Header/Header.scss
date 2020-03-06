@@ -1,0 +1,45 @@
+@import "../../styles/variable";
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: max-content;
+  background-color: $white;
+  border-bottom: 1px solid $light-grey;
+  .header-upper {
+    display: flex;
+    .search {
+      .search-input {
+        border: $red solid 1px;
+        padding: 7px;
+        font-size: $f-md;
+        width: 280px;
+        float: left;
+        margin: 10px auto 10px 20px;
+        border-radius: 0;
+      }
+    }
+    .avatar {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      float: right;
+      margin: 10px auto;
+    }
+  }
+  .header-lower {
+    .header-item {
+      font-size: $f-md;
+      font-weight: $primary;
+      display: inline-block;
+      padding: 10px;
+      float: left;
+      margin-left: 20px;
+      color: $black;
+      &.active {
+        border-bottom: $red 1px solid;
+      }
+    }
+  }
+}

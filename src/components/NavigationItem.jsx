@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {Component} from "react";
-import ''
 
-class Navigation extends Component{
+class NavigationItem extends Component{
     constructor(props) {
         super(props);
     }
     render() {
         return (
             <div className="navigation-item">
-                <Link to={this.props.url}>
+                <Link to={this.props.url} className={'active'}>
                     {this.props.name}
                 </Link>
             </div>
@@ -18,4 +17,4 @@ class Navigation extends Component{
     }
 }
 
-export default Navigation;
+export default NavigationItem;

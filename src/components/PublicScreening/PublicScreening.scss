@@ -1,0 +1,39 @@
+@import "../../styles/variable";
+.public-screening {
+  font-size: $f-sm;
+  text-align: left;
+  width: 100px;
+  height: 233px;
+  border-bottom: $red solid 4px;
+  display: inline-block;
+  border-radius: 4px;
+  box-shadow: $item-shadow;
+  overflow: hidden;
+  margin: 10px;
+  &:nth-of-type(1) {
+    margin-left: 20px;
+  }
+  .poster {
+    width: 100%;
+    height: 148px;
+  }
+  .lower-content {
+    position: relative;
+    height: 71px;
+    margin: 7px;
+    .film-name {
+      font-weight: $primary;
+      color: $black;
+      width: 85px;
+      margin: 0 auto;
+    }
+    .nearby {
+      color: $grey;
+      position: absolute;
+      bottom: 0;
+    }
+    .nearby-infos {
+      color: $red;
+    }
+  }
+}

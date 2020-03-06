@@ -4,6 +4,7 @@ $pink: #f7e9e7;
 $black: #2d2d2d;
 $grey: #8f8f8f;
 $white: #f9f9f9;
+$light-grey: #E6E6E6;
 // font weight
 $primary: 700;
 $normal: 400;
@@ -12,3 +13,16 @@ $light: 100;
 $sm: 320px;
 $md: 720px;
 $lg: 1080px;
+//font size
+$f-lg: 18px;
+$f-md: 16px;
+$f-sm: 12px;
+
+$item-shadow:0 0 22px rgba(0, 0, 0, 0.14);
+//images
+$img: '../../assets/images/';
+
+@function px( $px ){
+  @return $px/$designWidth*10 + rem;
+}
+$designWidth : 375

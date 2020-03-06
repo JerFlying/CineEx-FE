@@ -1,19 +1,46 @@
-@import "../styles/variable";
+@import "../../styles/variable";
 .navigation {
   height: 10vh;
   width: 100%;
   position: fixed;
   bottom: 0;
-  background-color: #ffffff;
+  background: url($img + "navigation-bg.svg") no-repeat calc(100% + 6px) calc(100% + 6px);
   .items {
     display: inline-flex;
-    width: 70%;
+    width: 66%;
   }
   .post {
     background-color: $red;
-    width: 30%;
+    width: 33%;
+    color: $white;
+    border-radius: 16px;
+    font-size: $f-lg;
+    padding: 7px;
   }
-  .navigation-item {
-    color: #2d2d2d;
+  .items {
+    display: inline-flex;
+    .navigation-item {
+      text-align: center;
+      width: 33.3%;
+      position: relative;
+      a {
+        color: #2d2d2d;
+        text-decoration: none;
+        font-size: 18px;
+        width: max-content;
+        &.active:after {
+          border: 3px $red solid;
+          border-radius: 50%;
+          height: 7px;
+          width: 7px;
+          display: inline-block;
+          content: '';
+          position: absolute;
+          top: 90%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
   }
 }
